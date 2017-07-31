@@ -191,7 +191,11 @@ void ParticleFilter::updateWeights(double sensor_range, double std_landmark[],
 		{
 
 			// placeholders for observation and associated prediction coordinates
-			double observation_x, observation_y, predicted_x, predicted_y;
+			double observation_x,
+			observation_y,
+			predicted_x,
+			predicted_y;
+			
 			observation_x = transformed_os[j].x;
 			observation_y = transformed_os[j].y;
 
